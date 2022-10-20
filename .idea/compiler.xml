@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mvc-01" />
+        <module name="mvc-02" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="mvc-01" target="1.5" />
+      <module name="mvc-02" target="1.5" />
       <module name="springmvc-parent" target="1.5" />
     </bytecodeTargetLevel>
   </component>

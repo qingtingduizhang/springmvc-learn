@@ -30,11 +30,19 @@
     <!--注解扫描路径-->
     <context:component-scan base-package="com.wuman"/>
     <!--引入springmvc的核心功能-->
-    <mvc:annotation-driven/>
+    <mvc:annotation-driven conversion-service="serviceFactoryBean"/>
 
     <!--视图解析器xml配置-->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/"></property>
         <property name="suffix" value=".jsp"></property>
+    </bean>
+    <bean id="dateConverter" class="com.wuman.config.DateConverter"></bean>
+    <bean id="serviceFactoryBean" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <ref bean="dateConverter"/>
+            </set>
+        </property>
     </bean>
 </beans>
