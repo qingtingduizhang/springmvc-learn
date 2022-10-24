@@ -12,7 +12,9 @@
        http://www.springframework.org/schema/context
        https://www.springframework.org/schema/context/spring-context.xsd">
     <!--注解扫描路径-->
-    <context:component-scan base-package="com.wuman"/>
+    <context:component-scan base-package="com.wuman">
+        <context:exclude-filter type="aspectj" expression="com.wuman.controller.*"/>
+    </context:component-scan>
     <!--数据库配置-->
     <bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver"/>

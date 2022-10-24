@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact name="mvc-04">
+    <output-path>$PROJECT_DIR$/out/artifacts/mvc_04</output-path>
+    <root id="root">
+      <element id="module-output" name="mvc-04" />
+    </root>
+  </artifact>
+</component>

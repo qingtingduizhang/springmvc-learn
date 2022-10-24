@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/springmvc-parent/mvc-01/mvc-01.iml" filepath="$PROJECT_DIR$/springmvc-parent/mvc-01/mvc-01.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc-parent/mvc-02/mvc-02.iml" filepath="$PROJECT_DIR$/springmvc-parent/mvc-02/mvc-02.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc-parent/mvc-03/mvc-03.iml" filepath="$PROJECT_DIR$/springmvc-parent/mvc-03/mvc-03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springmvc-parent/mvc-04/mvc-04.iml" filepath="$PROJECT_DIR$/springmvc-parent/mvc-04/mvc-04.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc-parent/springmvc-parent.iml" filepath="$PROJECT_DIR$/springmvc-parent/springmvc-parent.iml" />
     </modules>
   </component>

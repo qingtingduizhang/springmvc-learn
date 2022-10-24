@@ -32,7 +32,7 @@
 
 
     <!--注解扫描路径-->
-    <context:component-scan base-package="com.wuman"/>
+    <context:component-scan base-package="com.wuman.controller"/>
     <!--引入springmvc的核心功能-->
     <mvc:annotation-driven conversion-service="serviceFactoryBean"/>
 
