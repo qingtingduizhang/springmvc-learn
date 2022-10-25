@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
+import org.springframework.web.bind.support.SessionStatus;
 
 /**
  * 开发中，和使用父子容器的问题一样，控制器携带request/session这两个参数都会导致控制器与这两者的耦合
@@ -29,6 +30,19 @@ public class ModelController {
     public String model(Model model){
         model.addAttribute("age",10);
         model.addAttribute("name","wuman");
+        return "foward:/model/delete-session";
+    }
+
+    /**
+     * 完成控制器相关业务后，主动删除session的内存，清空，来保证运行内存
+     * @param sessionStatus
+     * @return
+     */
+    @RequestMapping("delete-session")
+    public String deleteSession(SessionStatus sessionStatus){
+        if (!sessionStatus.isComplete()) {
+            sessionStatus.setComplete();
+        }
         return "model";
     }
 }
